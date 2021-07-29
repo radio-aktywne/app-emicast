@@ -2,10 +2,10 @@ FROM alpine:3.14.0
 
 RUN apk add --no-cache icecast
 
-COPY ./src/icecast.xml /etc/icecast2/icecast.xml
+COPY ./decay/src/icecast.xml /etc/icecast2/icecast.xml
 
 # start script
-COPY ./src/start.sh /tmp/start.sh
+COPY ./decay/src/start.sh /tmp/start.sh
 RUN chmod +x /tmp/start.sh
 WORKDIR /tmp
 
