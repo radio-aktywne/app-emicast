@@ -23,7 +23,7 @@
     <hostname>localhost</hostname>
 
     <listen-socket>
-        <port>8080</port>
+        <port>8000</port>
     </listen-socket>
 
     <fileserve>1</fileserve>
@@ -39,7 +39,7 @@
     <logging>
         <accesslog>access.log</accesslog>
         <errorlog>error.log</errorlog>
-        <loglevel>3</loglevel>        <!-- 4 Debug, 3 Info, 2 Warn, 1 Error -->
+        <loglevel>3</loglevel>          <!-- 4 Debug, 3 Info, 2 Warn, 1 Error -->
         <logsize>10000</logsize>        <!-- Max size of a logfile -->
     </logging>
 

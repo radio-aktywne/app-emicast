@@ -13,6 +13,14 @@ WORKDIR /tmp
 RUN mkdir -p /etc/icecast2 /var/log/icecast2 /usr/share/icecast2
 RUN chown -R icecast /etc/icecast2 /var/log/icecast2 /usr/share/icecast2
 
-EXPOSE 8080
+# default configuration, override that with values from your environment
+ENV DECAY_SOURCE_PASSWORD=hackme \
+    DECAY_RELAY_PASSWORD=hackme \
+    DECAY_ADMIN_PASSWORD=admin \
+    DECAY_PASSWORD=hackme \
+    DECAY_HOST=localhost
 
-ENTRYPOINT ["./start.sh", "-p", "8080", "-c", "/etc/icecast2/icecast.xml", "-u", "icecast"]
+# running on port 8000
+EXPOSE 8000
+
+ENTRYPOINT ["./start.sh", "-p", "8000", "-c", "/etc/icecast2/icecast.xml", "-u", "icecast"]
