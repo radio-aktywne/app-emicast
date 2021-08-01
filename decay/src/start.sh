@@ -5,7 +5,7 @@ print_usage() {
 
     cat <<EOF
 Usage: $0 [-p PORT] [-c CONFIG] [-u USER]
-    -p, --port                            port to listen on (default: 8080)
+    -p, --port                            port to listen on (default: 8000)
     -c, --config                          config file path (default: /etc/icecast2/icecast.xml)
     -u, --user                            user to run icecast with, should be in a group with the same name (default: icecast)
 EOF
@@ -29,7 +29,7 @@ safe_replace() {
     fi
 }
 
-port='8080'
+port='8000'
 config='/etc/icecast2/icecast.xml'
 user='icecast'
 
@@ -44,14 +44,14 @@ while [ "$#" -gt 0 ]; do
 done
 
 # replace default options with environmental ones
-safe_replace "$config" 'source-password' "$ICECAST_SOURCE_PASSWORD"
-safe_replace "$config" 'relay-password'  "$ICECAST_RELAY_PASSWORD"
-safe_replace "$config" 'password'        "$ICECAST_ADMIN_PASSWORD"
-safe_replace "$config" 'password'        "$ICECAST_PASSWORD"
-safe_replace "$config" 'hostname'        "$ICECAST_HOSTNAME"
+safe_replace "$config" 'source-password' "$DECAY_SOURCE_PASSWORD"
+safe_replace "$config" 'relay-password'  "$DECAY_RELAY_PASSWORD"
+safe_replace "$config" 'password'        "$DECAY_ADMIN_PASSWORD"
+safe_replace "$config" 'password'        "$DECAY_PASSWORD"
+safe_replace "$config" 'hostname'        "$DECAY_HOST"
 safe_replace "$config" 'port'            "$port"
 safe_replace "$config" 'user'            "$user"
 safe_replace "$config" 'group'           "$user"
 
-icecast -b -c /etc/icecast2/icecast.xml # start icecast in background
+icecast -b -c "$config"                 # start icecast in background
 tail -F /var/log/icecast2/error.log     # follow logs live
