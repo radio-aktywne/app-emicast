@@ -6,7 +6,7 @@ By default it uses the `icecast.xml` file but you can override that with the `-c
 
 For more info see here: https://icecast.org/docs/icecast-latest/config-file.html
 
-# Overriding config file
+## Overriding config file
 
 Some special options can be set by environmental variables:
 
