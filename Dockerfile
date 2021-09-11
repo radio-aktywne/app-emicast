@@ -17,7 +17,6 @@ RUN chown -R icecast /etc/icecast2 /var/log/icecast2 /usr/share/icecast2
 ENV DECAY_SOURCE_PASSWORD=hackme \
     DECAY_RELAY_PASSWORD=hackme \
     DECAY_ADMIN_PASSWORD=admin \
-    DECAY_PASSWORD=hackme \
     DECAY_HOST=localhost
 
 # running on port 8000
