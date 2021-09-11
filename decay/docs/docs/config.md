@@ -4,7 +4,7 @@ Icecast can be configured by providing an `.xml` file with its configuration opt
 
 By default it uses the `icecast.xml` file but you can override that with the `-c` argument.
 
-For more info see here: https://icecast.org/docs/icecast-latest/config-file.html
+For more info see here: [https://icecast.org/docs/icecast-latest/config-file.html](https://icecast.org/docs/icecast-latest/config-file.html)
 
 ## Overriding config file
 
