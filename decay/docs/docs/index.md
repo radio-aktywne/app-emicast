@@ -10,5 +10,5 @@ To start the server `cd` into `src` and run:
 ./start.sh
 ```
 
-The server will run on [`http://localhost:8080`](http://localhost:8080).
+The server will run on [`http://localhost:8000`](http://localhost:8000).
 However, you still need to mount a source first to listen to any music.
