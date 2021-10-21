@@ -6,7 +6,7 @@ To start the server `cd` into `src` and run:
 ./start.sh
 ```
 
-The server will run on [`http://localhost:8080`](http://localhost:8080).
+The server will run on [`http://localhost:8000`](http://localhost:8000).
 However, you still need to mount a source first to listen to any music.
 
 ## Mounting sources
@@ -16,15 +16,15 @@ To mount a source you need to use a client that can communicate with Icecast.
 For example, you can use `liquidsoap` for that:
 
 ```sh
-docker run savonet/liquidsoap:main 'output.icecast(host="localhost", port=8080, password="hackme", mount="radio.mp3", %mp3, sine())'
+docker run savonet/liquidsoap:main 'output.icecast(host="localhost", port=8000, password="hackme", mount="radio.mp3", %mp3, sine())'
 ```
 
-Now you should hear a sine wave at [`http://localhost:8080/radio.mp3`](http://localhost:8080/radio.mp3).
+Now you should hear a sine wave at [`http://localhost:8000/radio.mp3`](http://localhost:8000/radio.mp3).
 
 ## Listening
 
 You can listen to any active mount point.
-If a mount point is called `radio.mp3` then you can reach the stream at [`http://localhost:8080/radio.mp3`](http://localhost:8080/radio.mp3).
+If a mount point is called `radio.mp3` then you can reach the stream at [`http://localhost:8000/radio.mp3`](http://localhost:8000/radio.mp3).
 
 Icecast is responsible for handling as many listeners as possible and making sure all of them get the live audio.
 
