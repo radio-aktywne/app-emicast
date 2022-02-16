@@ -1,4 +1,6 @@
-FROM alpine:3.14.0
+ARG ALPINE_IMAGE_TAG=3.14.0
+
+FROM alpine:$ALPINE_IMAGE_TAG
 
 RUN apk add --no-cache icecast
 
