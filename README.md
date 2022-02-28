@@ -1,11 +1,11 @@
-<h1 align="center">decay</h1>
+<h1 align="center">streamcast</h1>
 
 <div align="center">
 
 Icecast broadcasting ❄️
 
-[![Testing docker build](https://github.com/radio-aktywne/decay/actions/workflows/docker-build.yml/badge.svg)](https://github.com/radio-aktywne/decay/actions/workflows/docker-build.yml)
-[![Deploying docs](https://github.com/radio-aktywne/decay/actions/workflows/docs.yml/badge.svg)](https://github.com/radio-aktywne/decay/actions/workflows/docs.yml)
+[![Testing docker build](https://github.com/radio-aktywne/streamcast/actions/workflows/docker-build.yml/badge.svg)](https://github.com/radio-aktywne/streamcast/actions/workflows/docker-build.yml)
+[![Deploying docs](https://github.com/radio-aktywne/streamcast/actions/workflows/docs.yml/badge.svg)](https://github.com/radio-aktywne/streamcast/actions/workflows/docs.yml)
 
 </div>
 
@@ -13,22 +13,22 @@ Icecast broadcasting ❄️
 
 This `README` provides info about the development process.
 
-For more info about `decay` itself see `decay/README.md` or [docs](https://radio-aktywne.github.io/decay).
+For more info about `streamcast` itself see `streamcast/README.md` or [docs](https://radio-aktywne.github.io/streamcast).
 
 ## Quickstart
 
 Using [`docker`](https://docs.docker.com/get-docker/):
 
 ```sh
-docker build -t decay . && docker run --rm -it decay --help
+docker build -t streamcast . && docker run --rm -it streamcast --help
 ```
 
 ## Repository structure
 
-Everything strongly related to `decay` itself (e.g. source code) should be placed in the `decay` directory.
-Everything related to the development of `decay` (e.g. `Dockerfile`) should be placed at the top level.
+Everything strongly related to `streamcast` itself (e.g. source code) should be placed in the `streamcast` directory.
+Everything related to the development of `streamcast` (e.g. `Dockerfile`) should be placed at the top level.
 
-In particular the source code and documentation of `decay` should be placed in `decay/src` and `decay/docs` respectively.
+In particular the source code and documentation of `streamcast` should be placed in `streamcast/src` and `streamcast/docs` respectively.
 
 ## Continuous Integration
 
@@ -56,12 +56,12 @@ Every time you publish a release, the Docker image is uploaded to Github registr
 We are using [`mkdocs`](https://www.mkdocs.org) with [`material`](https://squidfunk.github.io/mkdocs-material) for building the docs.
 It lets you write the docs in Markdown format and creates a nice webpage for them.
 
-Docs should be placed in `decay/docs/docs`.
+Docs should be placed in `streamcast/docs/docs`.
 They are pretty straightforward to write.
 
 If you want to build the docs manually (for example to see how they look without publishing them)
-you should first install the requirements listed in `decay/docs/requirements.txt` into your `python` environment.
-Then `cd` into `decay/docs` and run:
+you should first install the requirements listed in `streamcast/docs/requirements.txt` into your `python` environment.
+Then `cd` into `streamcast/docs` and run:
 
 ```sh
 mkdocs build

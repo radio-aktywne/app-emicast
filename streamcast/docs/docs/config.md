@@ -10,10 +10,10 @@ For more info see here: [https://icecast.org/docs/icecast-latest/config-file.htm
 
 Some special options can be set by environmental variables:
 
-- `DECAY_SOURCE_PASSWORD` overrides the `source-password` option
-- `DECAY_RELAY_PASSWORD` overrides the `relay-password` option
-- `DECAY_ADMIN_PASSWORD` overrides the `admin-password` option
-- `DECAY_HOST` overrides the `hostname` option
+- `STREAMCAST_SOURCE_PASSWORD` overrides the `source-password` option
+- `STREAMCAST_RELAY_PASSWORD` overrides the `relay-password` option
+- `STREAMCAST_ADMIN_PASSWORD` overrides the `admin-password` option
+- `STREAMCAST_HOST` overrides the `hostname` option
 
 And some can be set by start script arguments:
 

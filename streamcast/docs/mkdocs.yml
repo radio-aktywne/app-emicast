@@ -1,7 +1,7 @@
-site_name: decay docs
+site_name: streamcast docs
 
-repo_url: https://github.com/radio-aktywne/decay
-repo_name: radio-aktywne/decay
+repo_url: https://github.com/radio-aktywne/streamcast
+repo_name: radio-aktywne/streamcast
 
 # disable edit button
 edit_uri: ""
@@ -69,7 +69,7 @@ extra:
   # footer social icons
   social:
     - icon: material/github
-      link: https://github.com/radio-aktywne/decay
+      link: https://github.com/radio-aktywne/streamcast
 
 nav:
   - Home: index.md
