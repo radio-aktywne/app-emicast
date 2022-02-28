@@ -4,10 +4,10 @@ FROM alpine:$ALPINE_IMAGE_TAG
 
 RUN apk add --no-cache icecast
 
-COPY ./decay/src/icecast.xml /etc/icecast2/icecast.xml
+COPY ./streamcast/src/icecast.xml /etc/icecast2/icecast.xml
 
 # start script
-COPY ./decay/src/start.sh /tmp/start.sh
+COPY ./streamcast/src/start.sh /tmp/start.sh
 RUN chmod +x /tmp/start.sh
 WORKDIR /tmp
 
@@ -16,10 +16,10 @@ RUN mkdir -p /etc/icecast2 /var/log/icecast2 /usr/share/icecast2
 RUN chown -R icecast /etc/icecast2 /var/log/icecast2 /usr/share/icecast2
 
 # default configuration, override that with values from your environment
-ENV DECAY_SOURCE_PASSWORD=hackme \
-    DECAY_RELAY_PASSWORD=hackme \
-    DECAY_ADMIN_PASSWORD=admin \
-    DECAY_HOST=localhost
+ENV STREAMCAST_SOURCE_PASSWORD=hackme \
+    STREAMCAST_RELAY_PASSWORD=hackme \
+    STREAMCAST_ADMIN_PASSWORD=admin \
+    STREAMCAST_HOST=localhost
 
 # running on port 8000
 EXPOSE 8000

@@ -28,6 +28,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/radio-aktywne/decay:latest,ghcr.io/radio-aktywne/decay:${{ github.event.release.tag_name }}
+          tags: ghcr.io/radio-aktywne/streamcast:latest,ghcr.io/radio-aktywne/streamcast:${{ github.event.release.tag_name }}
           cache-from: type=gha, scope=${{ github.workflow }}
           cache-to: type=gha, mode=max, scope=${{ github.workflow }}

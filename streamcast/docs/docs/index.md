@@ -1,8 +1,8 @@
-# decay
+# streamcast
 
 Icecast broadcasting ❄️
 
-`decay` is an [Icecast](https://icecast.org) server that you can send audio to and have it broadcasted to multiple listeners.
+`streamcast` is an [Icecast](https://icecast.org) server that you can send audio to and have it broadcasted to multiple listeners.
 
 To start the server `cd` into `src` and run:
 

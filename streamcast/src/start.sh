@@ -44,10 +44,10 @@ while [ "$#" -gt 0 ]; do
 done
 
 # replace default options with environmental ones
-safe_replace "$config" 'source-password' "$DECAY_SOURCE_PASSWORD"
-safe_replace "$config" 'relay-password'  "$DECAY_RELAY_PASSWORD"
-safe_replace "$config" 'admin-password'  "$DECAY_ADMIN_PASSWORD"
-safe_replace "$config" 'hostname'        "$DECAY_HOST"
+safe_replace "$config" 'source-password' "$STREAMCAST_SOURCE_PASSWORD"
+safe_replace "$config" 'relay-password'  "$STREAMCAST_RELAY_PASSWORD"
+safe_replace "$config" 'admin-password'  "$STREAMCAST_ADMIN_PASSWORD"
+safe_replace "$config" 'hostname'        "$STREAMCAST_HOST"
 safe_replace "$config" 'port'            "$port"
 safe_replace "$config" 'user'            "$user"
 safe_replace "$config" 'group'           "$user"

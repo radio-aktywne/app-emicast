@@ -7,7 +7,7 @@ on:
       - main
     # trigger only on changes to the following files
     paths:
-      - "decay/src/**"
+      - "streamcast/src/**"
       - "Dockerfile"
       - ".github/workflows/docker-build.yml"
   pull_request:
@@ -16,7 +16,7 @@ on:
       - main
     # trigger only on changes to the following files
     paths:
-      - "decay/src/**"
+      - "streamcast/src/**"
       - "Dockerfile"
       - ".github/workflows/docker-build.yml"
 
@@ -34,6 +34,6 @@ jobs:
         with:
           context: .
           push: false
-          tags: decay:latest
+          tags: streamcast:latest
           cache-from: type=gha, scope=${{ github.workflow }}
           cache-to: type=gha, mode=max, scope=${{ github.workflow }}
