@@ -2,7 +2,7 @@
 
 <div align="center">
 
-Icecast broadcasting ❄️
+icecast broadcasting ❄️
 
 [![Testing docker build](https://github.com/radio-aktywne/streamcast/actions/workflows/docker-build.yml/badge.svg)](https://github.com/radio-aktywne/streamcast/actions/workflows/docker-build.yml)
 [![Deploying docs](https://github.com/radio-aktywne/streamcast/actions/workflows/docs.yml/badge.svg)](https://github.com/radio-aktywne/streamcast/actions/workflows/docs.yml)
