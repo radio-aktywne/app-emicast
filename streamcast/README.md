@@ -4,8 +4,8 @@
 
 icecast broadcasting ❄️
 
-[![Testing docker build](https://github.com/radio-aktywne/streamcast/actions/workflows/docker-build.yml/badge.svg)](https://github.com/radio-aktywne/streamcast/actions/workflows/docker-build.yml)
-[![Deploying docs](https://github.com/radio-aktywne/streamcast/actions/workflows/docs.yml/badge.svg)](https://github.com/radio-aktywne/streamcast/actions/workflows/docs.yml)
+[![Build](https://github.com/radio-aktywne/streamcast/actions/workflows/build.yaml/badge.svg)](https://github.com/radio-aktywne/streamcast/actions/workflows/build.yaml)
+[![Docs](https://github.com/radio-aktywne/streamcast/actions/workflows/docs.yaml/badge.svg)](https://github.com/radio-aktywne/streamcast/actions/workflows/docs.yaml)
 
 </div>
 
@@ -33,7 +33,7 @@ For more info about arguments, run:
 ## Configuration
 
 Icecast can be configured by providing an `.xml` file with its configuration options.
-By default it uses the `icecast.xml` file but you can override that with the `-c` argument.
+By default, it uses the `icecast.xml` file, but you can override that with the `-c` argument.
 
 Some special options can be set by environmental variables:
 
