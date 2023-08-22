@@ -1,0 +1,14 @@
+---
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: 0.1.3
+_src_path: gh:radio-aktywne/template-app-generic
+accountname: radio-aktywne
+appname: streamcast
+description: icecast broadcasting ❄️
+docs: true
+docsurl: https://radio-aktywne.github.io/app-streamcast
+envprefix: STREAMCAST
+registry: true
+releases: true
+reponame: app-streamcast
+repourl: https://github.com/radio-aktywne/app-streamcast
