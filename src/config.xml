@@ -1,0 +1,98 @@
+<icecast>
+  <!-- Don't worry, the credentials will be changed at startup -->
+  <authentication>
+    <source-password>password</source-password>
+    <admin-user>admin</admin-user>
+    <admin-password>password</admin-password>
+  </authentication>
+
+  <hostname>localhost</hostname>
+  <location>Radio Aktywne</location>
+  <admin>it@radioaktywne.pl</admin>
+
+  <!-- Disable serving static files -->
+  <fileserve>0</fileserve>
+
+  <listen-socket>
+    <port>8000</port>
+  </listen-socket>
+
+  <paths>
+    <!-- Funny workaround for logging to standard devices -->
+    <logdir>/dev</logdir>
+
+    <webroot>./src/web</webroot>
+    <adminroot>./src/admin</adminroot>
+
+    <!-- Hide some paths -->
+    <alias source="/admin" destination="/admin/null" />
+    <alias source="/admin/" destination="/admin/null" />
+    <alias source="/admin/fallbacks" destination="/admin/null" />
+    <alias source="/admin/fallbacks.xsl" destination="/admin/null" />
+    <alias source="/admin/fallbacks.json" destination="/admin/null" />
+    <alias source="/admin/admin.cgi" destination="/admin/null" />
+    <alias source="/admin/metadata" destination="/admin/null" />
+    <alias source="/admin/metadata.xsl" destination="/admin/null" />
+    <alias source="/admin/metadata.json" destination="/admin/null" />
+    <alias source="/admin/listclients.xsl" destination="/admin/null" />
+    <alias source="/admin/stats.xsl" destination="/admin/null" />
+    <alias source="/admin/reloadconfig" destination="/admin/null" />
+    <alias source="/admin/reloadconfig.xsl" destination="/admin/null" />
+    <alias source="/admin/reloadconfig.json" destination="/admin/null" />
+    <alias source="/admin/listmounts.xsl" destination="/admin/null" />
+    <alias source="/admin/streamlist.xsl" destination="/admin/null" />
+    <alias source="/admin/streamlist.txt" destination="/admin/null" />
+    <alias source="/admin/listensocketlist" destination="/admin/null" />
+    <alias source="/admin/listensocketlist.xsl" destination="/admin/null" />
+    <alias source="/admin/moveclients" destination="/admin/null" />
+    <alias source="/admin/moveclients.xsl" destination="/admin/null" />
+    <alias source="/admin/moveclients.json" destination="/admin/null" />
+    <alias source="/admin/killclient" destination="/admin/null" />
+    <alias source="/admin/killclient.xsl" destination="/admin/null" />
+    <alias source="/admin/killclient.json" destination="/admin/null" />
+    <alias source="/admin/killsource" destination="/admin/null" />
+    <alias source="/admin/killsource.xsl" destination="/admin/null" />
+    <alias source="/admin/killsource.json" destination="/admin/null" />
+    <alias source="/admin/response.xsl" destination="/admin/null" />
+    <alias source="/admin/manageauth" destination="/admin/null" />
+    <alias source="/admin/manageauth.xsl" destination="/admin/null" />
+    <alias source="/admin/manageauth.json" destination="/admin/null" />
+    <alias source="/admin/updatemetadata" destination="/admin/null" />
+    <alias source="/admin/updatemetadata.xsl" destination="/admin/null" />
+    <alias source="/admin/updatemetadata.json" destination="/admin/null" />
+    <alias source="/admin/showlog" destination="/admin/null" />
+    <alias source="/admin/showlog.xsl" destination="/admin/null" />
+    <alias source="/admin/showlog.json" destination="/admin/null" />
+    <alias source="/admin/marklog" destination="/admin/null" />
+    <alias source="/admin/marklog.xsl" destination="/admin/null" />
+    <alias source="/admin/marklog.json" destination="/admin/null" />
+    <alias source="/admin/dashboard" destination="/admin/null" />
+    <alias source="/admin/dashboard.xsl" destination="/admin/null" />
+    <alias source="/admin/dashboard.json" destination="/admin/null" />
+    <alias source="/admin/version" destination="/admin/null" />
+    <alias source="/admin/version.xsl" destination="/admin/null" />
+
+    <!-- Aliases for paths that should be accessible -->
+    <alias source="/admin/listclients" destination="/admin/listclients.json" />
+    <alias source="/admin/listclients/" destination="/admin/listclients.json" />
+    <alias source="/admin/stats" destination="/admin/stats.json" />
+    <alias source="/admin/stats/" destination="/admin/stats.json" />
+    <alias source="/admin/publicstats" destination="/admin/publicstats.json" />
+    <alias source="/admin/publicstats/" destination="/admin/publicstats.json" />
+    <alias source="/admin/listmounts" destination="/admin/listmounts.json" />
+    <alias source="/admin/listmounts/" destination="/admin/listmounts.json" />
+    <alias source="/admin/streamlist" destination="/admin/streamlist.json" />
+    <alias source="/admin/streamlist/" destination="/admin/streamlist.json" />
+  </paths>
+
+  <logging>
+    <!-- Don't care about access logs -->
+    <accesslog>null</accesslog>
+
+    <!-- Log errors to stderr -->
+    <errorlog>-</errorlog>
+
+    <!-- 4 Debug, 3 Info, 2 Warn, 1 Error -->
+    <loglevel>3</loglevel>
+  </logging>
+</icecast>

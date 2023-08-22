@@ -1,0 +1,12 @@
+---
+services:
+  streamcast:
+    build: .
+    network_mode: host
+    environment:
+      - "STREAMCAST_HOST=${STREAMCAST_HOST:-localhost}"
+      - "STREAMCAST_PORT=${STREAMCAST_PORT:-8000}"
+      - "STREAMCAST_SOURCE_PASSWORD=${STREAMCAST_SOURCE_PASSWORD:-password}"
+      - "STREAMCAST_RELAY_PASSWORD=${STREAMCAST_RELAY_PASSWORD:-password}"
+      - "STREAMCAST_ADMIN_USER=${STREAMCAST_ADMIN_USER:-admin}"
+      - "STREAMCAST_ADMIN_PASSWORD=${STREAMCAST_ADMIN_PASSWORD:-password}"
