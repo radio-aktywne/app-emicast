@@ -37,10 +37,6 @@ WORKDIR /app/
 # Create app user
 RUN useradd --create-home app
 
-# Setup data directory
-RUN mkdir -p ./data/web/ ./data/admin/
-RUN chown -R app ./data/
-
 # Setup entrypoint for RUN commands
 COPY ./scripts/shell.sh ./scripts/shell.sh
 SHELL ["./scripts/shell.sh"]
