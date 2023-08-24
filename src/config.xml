@@ -35,7 +35,6 @@
     <alias source="/admin/fallbacks.xsl" destination="/admin/null" />
     <alias source="/admin/fallbacks.json" destination="/admin/null" />
     <alias source="/admin/admin.cgi" destination="/admin/null" />
-    <alias source="/admin/metadata" destination="/admin/null" />
     <alias source="/admin/metadata.xsl" destination="/admin/null" />
     <alias source="/admin/metadata.json" destination="/admin/null" />
     <alias source="/admin/listclients.xsl" destination="/admin/null" />
@@ -61,7 +60,6 @@
     <alias source="/admin/manageauth" destination="/admin/null" />
     <alias source="/admin/manageauth.xsl" destination="/admin/null" />
     <alias source="/admin/manageauth.json" destination="/admin/null" />
-    <alias source="/admin/updatemetadata" destination="/admin/null" />
     <alias source="/admin/updatemetadata.xsl" destination="/admin/null" />
     <alias source="/admin/updatemetadata.json" destination="/admin/null" />
     <alias source="/admin/showlog" destination="/admin/null" />
