@@ -1,7 +1,6 @@
 <icecast>
   <!-- Don't worry, the credentials will be changed at startup -->
   <authentication>
-    <source-password>password</source-password>
     <admin-user>admin</admin-user>
     <admin-password>password</admin-password>
   </authentication>
@@ -16,6 +15,11 @@
   <listen-socket>
     <port>8000</port>
   </listen-socket>
+
+  <mount type="default">
+    <username>source</username>
+    <password>password</password>
+  </mount>
 
   <paths>
     <!-- Funny workaround for logging to standard devices -->

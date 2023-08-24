@@ -14,6 +14,7 @@ docker run --network host savonet/liquidsoap:main \
     'output.icecast(
         host="localhost",
         port=8000,
+        user="source",
         password="password",
         mount="radio.mp3",
         %mp3,
