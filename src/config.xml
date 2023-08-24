@@ -73,18 +73,6 @@
     <alias source="/admin/dashboard.json" destination="/admin/null" />
     <alias source="/admin/version" destination="/admin/null" />
     <alias source="/admin/version.xsl" destination="/admin/null" />
-
-    <!-- Aliases for paths that should be accessible -->
-    <alias source="/admin/listclients" destination="/admin/listclients.json" />
-    <alias source="/admin/listclients/" destination="/admin/listclients.json" />
-    <alias source="/admin/stats" destination="/admin/stats.json" />
-    <alias source="/admin/stats/" destination="/admin/stats.json" />
-    <alias source="/admin/publicstats" destination="/admin/publicstats.json" />
-    <alias source="/admin/publicstats/" destination="/admin/publicstats.json" />
-    <alias source="/admin/listmounts" destination="/admin/listmounts.json" />
-    <alias source="/admin/listmounts/" destination="/admin/listmounts.json" />
-    <alias source="/admin/streamlist" destination="/admin/streamlist.json" />
-    <alias source="/admin/streamlist/" destination="/admin/streamlist.json" />
   </paths>
 
   <logging>

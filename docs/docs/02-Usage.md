@@ -39,11 +39,16 @@ and making sure all of them get the live audio.
 
 There are various endpoints with internal insights and statistics:
 
-- `/admin/listclients?mount=/radio.mp3` - list clients listening to `/radio.mp3`
-- `/admin/stats` - various statistics
-- `/admin/publicstats` - subset of statistics that are safe to expose to the public
-- `/admin/listmounts` - list all active mount points
-- `/admin/streamlist` - list all active streams
+- `/admin/listclients.json?mount=/radio.mp3` -
+  list clients listening to `/radio.mp3`
+- `/admin/stats.json` -
+  various statistics
+- `/admin/publicstats.json` -
+  subset of statistics that are safe to expose to the public
+- `/admin/listmounts.json` -
+  list all active mount points
+- `/admin/streamlist.json` -
+  list all active streams
 
 All of them return data in JSON format.
 You need to authenticate with basic auth to access them.
