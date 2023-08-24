@@ -11,27 +11,31 @@
   speex,
   libkate,
   libopus,
-}:
-stdenv.mkDerivation rec {
+}: let
   pname = "icecast";
   version = "2.5-beta3";
+  sha256 = "sha256-4FDokoA9zBDYj8RAO/kuTHaZ6jZYBLSJZiX/IYFaCW8=";
+in
+  stdenv.mkDerivation {
+    inherit pname version;
 
-  src = fetchurl {
-    url = "http://downloads.xiph.org/releases/icecast/icecast-${version}.tar.gz";
-    sha256 = "sha256-4FDokoA9zBDYj8RAO/kuTHaZ6jZYBLSJZiX/IYFaCW8=";
-  };
+    src = fetchurl {
+      inherit sha256;
 
-  buildInputs = [
-    pkg-config
-    libxml2
-    libxslt
-    curl
-    libvorbis
-    libtheora
-    speex
-    libkate
-    libopus
-  ];
+      url = "http://downloads.xiph.org/releases/${pname}/${pname}-${version}.tar.gz";
+    };
 
-  hardeningEnable = ["pie"];
-}
+    buildInputs = [
+      pkg-config
+      libxml2
+      libxslt
+      curl
+      libvorbis
+      libtheora
+      speex
+      libkate
+      libopus
+    ];
+
+    hardeningEnable = ["pie"];
+  }
