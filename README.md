@@ -2,7 +2,7 @@
 
 <div align="center">
 
-icecast broadcasting ❄️
+Icecast broadcasting ❄️
 
 [![Lint](https://github.com/radio-aktywne/app-streamcast/actions/workflows/lint.yaml/badge.svg)](https://github.com/radio-aktywne/app-streamcast/actions/workflows/lint.yaml)
 [![Image](https://github.com/radio-aktywne/app-streamcast/actions/workflows/image.yaml/badge.svg)](https://github.com/radio-aktywne/app-streamcast/actions/workflows/image.yaml)

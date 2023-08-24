@@ -5,7 +5,7 @@ title: Index
 
 # streamcast
 
-icecast broadcasting ❄️
+Icecast broadcasting ❄️
 
 ## 💡 About
 

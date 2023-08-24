@@ -4,7 +4,7 @@ _commit: 0.1.3
 _src_path: gh:radio-aktywne/template-app-generic
 accountname: radio-aktywne
 appname: streamcast
-description: icecast broadcasting ❄️
+description: Icecast broadcasting ❄️
 docs: true
 docsurl: https://radio-aktywne.github.io/app-streamcast
 envprefix: STREAMCAST
