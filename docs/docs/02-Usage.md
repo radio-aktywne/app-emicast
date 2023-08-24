@@ -10,7 +10,7 @@ To mount a source you need to use a client that can communicate with [`Icecast`]
 For example, you can use [`Liquidsoap`](https://www.liquidsoap.info) for that:
 
 ```sh
-docker run --network host savonet/liquidsoap:main \
+liquidsoap \
     'output.icecast(
         host="localhost",
         port=8000,
