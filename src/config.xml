@@ -19,6 +19,7 @@
   <mount type="default">
     <username>source</username>
     <password>password</password>
+    <charset>UTF-8</charset>
   </mount>
 
   <paths>
