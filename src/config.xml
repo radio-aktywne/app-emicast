@@ -86,4 +86,8 @@
     <!-- 4 Debug, 3 Info, 2 Warn, 1 Error -->
     <loglevel>3</loglevel>
   </logging>
+
+  <security>
+    <prng-seed type="profile">linux</prng-seed>
+  </security>
 </icecast>
