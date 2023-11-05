@@ -38,6 +38,7 @@
         node = pkgs.nodejs;
         nil = pkgs.nil;
         task = pkgs.go-task;
+        coreutils = pkgs.coreutils;
         trunk = pkgs.trunk-io;
         copier = pkgs.copier;
         # Build icecast manually to use the latest version
@@ -72,6 +73,7 @@
               node
               nil
               task
+              coreutils
               trunk
               copier
               icecast
@@ -96,6 +98,7 @@
 
             packages = [
               task
+              coreutils
               copier
             ];
           };
@@ -106,6 +109,7 @@
             packages = [
               node
               task
+              coreutils
               trunk
             ];
           };
@@ -116,6 +120,7 @@
             packages = [
               node
               task
+              coreutils
             ];
           };
         };
