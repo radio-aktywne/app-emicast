@@ -3,7 +3,7 @@ slug: /
 title: Index
 ---
 
-# streamcast
+# streamcast app
 
 Icecast broadcasting ❄️
 

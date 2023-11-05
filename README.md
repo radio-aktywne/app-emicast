@@ -1,4 +1,4 @@
-<h1 align="center">streamcast</h1>
+<h1 align="center">streamcast app</h1>
 
 <div align="center">
 
