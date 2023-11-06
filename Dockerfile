@@ -44,12 +44,6 @@ SHELL ["./scripts/shell.sh"]
 # Copy source
 COPY ./src/ ./src/
 
-# Setup environmental variables
-ENV STREAMCAST_PORT=8000
-
-# Running on port 8000
-EXPOSE 8000
-
 # Setup main entrypoint
 COPY ./scripts/entrypoint.sh ./scripts/entrypoint.sh
 ENTRYPOINT ["./scripts/entrypoint.sh", "/app/src/start.sh"]
