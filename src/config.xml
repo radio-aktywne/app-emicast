@@ -1,11 +1,11 @@
 <icecast>
   <!-- Don't worry, the credentials will be changed at startup -->
   <authentication>
-    <admin-user>admin</admin-user>
-    <admin-password>password</admin-password>
+    <admin-user>${STREAMCAST_ADMIN_USER:-admin}</admin-user>
+    <admin-password>${STREAMCAST_ADMIN_PASSWORD:-password}</admin-password>
   </authentication>
 
-  <hostname>0.0.0.0</hostname>
+  <hostname>${STREAMCAST_HOST:-0.0.0.0}</hostname>
   <location>Radio Aktywne</location>
   <admin>it@radioaktywne.pl</admin>
 
@@ -13,12 +13,12 @@
   <fileserve>0</fileserve>
 
   <listen-socket>
-    <port>8000</port>
+    <port>${STREAMCAST_PORT:-8000}</port>
   </listen-socket>
 
   <mount type="default">
-    <username>source</username>
-    <password>password</password>
+    <username>${STREAMCAST_SOURCE_USER:-source}</username>
+    <password>${STREAMCAST_SOURCE_PASSWORD:-password}</password>
     <charset>UTF-8</charset>
   </mount>
 
