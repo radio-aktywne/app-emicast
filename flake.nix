@@ -43,7 +43,7 @@
         copier = pkgs.copier;
         # Build icecast manually to use the latest version
         icecast = pkgs.callPackage ./icecast.nix {};
-        xmlstarlet = pkgs.xmlstarlet;
+        envsubst = pkgs.envsubst;
         liquidsoap = pkgs.liquidsoap;
         tini = pkgs.tini;
         su-exec = pkgs.su-exec;
@@ -77,7 +77,7 @@
               trunk
               copier
               icecast
-              xmlstarlet
+              envsubst
               liquidsoap
             ];
           };
@@ -87,7 +87,7 @@
 
             packages = [
               icecast
-              xmlstarlet
+              envsubst
               tini
               su-exec
             ];
