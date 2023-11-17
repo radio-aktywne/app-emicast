@@ -1,4 +1,3 @@
----
 plugins:
   # Enable XML plugin
   - "@prettier/plugin-xml"

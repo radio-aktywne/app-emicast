@@ -5,7 +5,7 @@
     <admin-password>password</admin-password>
   </authentication>
 
-  <hostname>localhost</hostname>
+  <hostname>0.0.0.0</hostname>
   <location>Radio Aktywne</location>
   <admin>it@radioaktywne.pl</admin>
 
@@ -24,10 +24,10 @@
 
   <paths>
     <!-- Funny workaround for logging to standard devices -->
-    <logdir>/dev</logdir>
+    <logdir>/dev/</logdir>
 
-    <webroot>./src/web</webroot>
-    <adminroot>./src/admin</adminroot>
+    <webroot>src/web/</webroot>
+    <adminroot>src/admin/</adminroot>
 
     <!-- Hide some paths -->
     <alias source="/admin" destination="/admin/null" />

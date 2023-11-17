@@ -20,18 +20,18 @@ safe_replace() {
 	fi
 }
 
-config="$(mktemp --tmpdir=/tmp)"
+config="$(mktemp --tmpdir=/tmp/)"
 
 # Create a copy of the config file
-cat ./src/config.xml >"${config}"
+cat src/config.xml >"${config}"
 
 # Replace values in the config file
+safe_replace "${config}" '/icecast/hostname' "${STREAMCAST_HOST:-}"
+safe_replace "${config}" '/icecast/listen-socket/port' "${STREAMCAST_PORT:-}"
 safe_replace "${config}" '/icecast/mount/username' "${STREAMCAST_SOURCE_USER:-}"
 safe_replace "${config}" '/icecast/mount/password' "${STREAMCAST_SOURCE_PASSWORD:-}"
 safe_replace "${config}" '/icecast/authentication/admin-user' "${STREAMCAST_ADMIN_USER:-}"
 safe_replace "${config}" '/icecast/authentication/admin-password' "${STREAMCAST_ADMIN_PASSWORD:-}"
-safe_replace "${config}" '/icecast/hostname' "${STREAMCAST_HOST:-}"
-safe_replace "${config}" '/icecast/listen-socket/port' "${STREAMCAST_PORT:-}"
 
 # Start icecast
 icecast -c "${config}"
