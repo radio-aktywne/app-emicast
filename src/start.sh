@@ -1,6 +1,6 @@
 #!/bin/sh
 
-tmpconfig="$(mktemp --tmpdir=/tmp/)"
+tmpconfig="$(mktemp)"
 
 # Replace environment variables in config file and save to temporary file
 envsubst <src/config.xml >"${tmpconfig}"
