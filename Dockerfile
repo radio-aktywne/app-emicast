@@ -50,4 +50,4 @@ ENTRYPOINT ["/app/scripts/entrypoint.sh", "./src/start.sh"]
 CMD []
 
 # Setup ownership
-RUN chown -R app: /app/
+RUN chown --recursive app: ./
