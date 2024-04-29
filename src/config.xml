@@ -2,9 +2,8 @@
   <!-- Don't worry, the credentials will be changed at startup -->
   <authentication>
     <admin-user>${STREAMCAST__CREDENTIALS__ADMIN__USER:-admin}</admin-user>
-    <admin-password>
-      ${STREAMCAST__CREDENTIALS__ADMIN__PASSWORD:-password}
-    </admin-password>
+    <admin-password
+    >${STREAMCAST__CREDENTIALS__ADMIN__PASSWORD:-password}</admin-password>
   </authentication>
 
   <hostname>${STREAMCAST__SERVER__HOST:-0.0.0.0}</hostname>

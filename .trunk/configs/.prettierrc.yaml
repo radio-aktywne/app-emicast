@@ -3,4 +3,4 @@ plugins:
   - "@prettier/plugin-xml"
 
 # Format whitespaces
-xmlWhitespaceSensitivity: ignore
+xmlWhitespaceSensitivity: preserve
