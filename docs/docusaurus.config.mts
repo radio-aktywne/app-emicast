@@ -2,10 +2,10 @@ import type * as Preset from "@docusaurus/preset-classic";
 import type { Config } from "@docusaurus/types";
 import { themes } from "prism-react-renderer";
 
-const url = new URL("https://radio-aktywne.github.io/app-streamcast");
+const url = new URL("https://radio-aktywne.github.io/app-emicast");
 
 const config: Config = {
-  title: "streamcast app docs",
+  title: "emicast app docs",
   favicon: "favicon.svg?v=1",
 
   url: `${url.protocol}//${url.host}`,
@@ -41,14 +41,14 @@ const config: Config = {
 
   themeConfig: {
     navbar: {
-      title: "streamcast app docs",
+      title: "emicast app docs",
       logo: {
-        alt: "streamcast app docs logo",
+        alt: "emicast app docs logo",
         src: "logo.svg?v=1",
       },
       items: [
         {
-          href: "https://github.com/radio-aktywne/app-streamcast",
+          href: "https://github.com/radio-aktywne/app-emicast",
           position: "right",
           className: "header-github-link",
           "aria-label": "GitHub repository",
