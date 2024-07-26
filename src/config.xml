@@ -1,12 +1,12 @@
 <icecast>
   <!-- Don't worry, the credentials will be changed at startup -->
   <authentication>
-    <admin-user>${STREAMCAST__CREDENTIALS__ADMIN__USER:-admin}</admin-user>
+    <admin-user>${EMICAST__CREDENTIALS__ADMIN__USER:-admin}</admin-user>
     <admin-password
-    >${STREAMCAST__CREDENTIALS__ADMIN__PASSWORD:-password}</admin-password>
+    >${EMICAST__CREDENTIALS__ADMIN__PASSWORD:-password}</admin-password>
   </authentication>
 
-  <hostname>${STREAMCAST__SERVER__HOST:-0.0.0.0}</hostname>
+  <hostname>${EMICAST__SERVER__HOST:-0.0.0.0}</hostname>
   <location>Radio Aktywne</location>
   <admin>it@radioaktywne.pl</admin>
 
@@ -14,12 +14,12 @@
   <fileserve>0</fileserve>
 
   <listen-socket>
-    <port>${STREAMCAST__SERVER__PORT:-8000}</port>
+    <port>${EMICAST__SERVER__PORT:-8000}</port>
   </listen-socket>
 
   <mount type="default">
-    <username>${STREAMCAST__CREDENTIALS__SOURCE__USER:-source}</username>
-    <password>${STREAMCAST__CREDENTIALS__SOURCE__PASSWORD:-password}</password>
+    <username>${EMICAST__CREDENTIALS__SOURCE__USER:-source}</username>
+    <password>${EMICAST__CREDENTIALS__SOURCE__PASSWORD:-password}</password>
     <charset>UTF-8</charset>
   </mount>
 

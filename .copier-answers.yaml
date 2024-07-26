@@ -2,13 +2,13 @@
 _commit: 0.7.1
 _src_path: gh:radio-aktywne/template-app-generic
 accountname: radio-aktywne
-appname: streamcast
+appname: emicast
 description: Icecast broadcasting ❄️
 docs: true
-docsurl: https://radio-aktywne.github.io/app-streamcast
-envprefix: STREAMCAST
-imagename: apps/streamcast
+docsurl: https://radio-aktywne.github.io/app-emicast
+envprefix: EMICAST
+imagename: apps/emicast
 registry: true
 releases: true
-reponame: app-streamcast
-repourl: https://github.com/radio-aktywne/app-streamcast
+reponame: app-emicast
+repourl: https://github.com/radio-aktywne/app-emicast
