@@ -2,10 +2,10 @@ import type * as Preset from "@docusaurus/preset-classic";
 import type { Config } from "@docusaurus/types";
 import { themes } from "prism-react-renderer";
 
-const url = new URL("https://radio-aktywne.github.io/emicast");
+const url = new URL("https://radio-aktywne.github.io/quokka");
 
 const config: Config = {
-  title: "emicast docs",
+  title: "quokka docs",
   favicon: "favicon.svg?v=1",
 
   url: `${url.protocol}//${url.host}`,
@@ -41,14 +41,14 @@ const config: Config = {
 
   themeConfig: {
     navbar: {
-      title: "emicast docs",
+      title: "quokka docs",
       logo: {
-        alt: "emicast docs logo",
+        alt: "quokka docs logo",
         src: "logo.svg?v=1",
       },
       items: [
         {
-          href: "https://github.com/radio-aktywne/emicast",
+          href: "https://github.com/radio-aktywne/quokka",
           position: "right",
           className: "header-github-link",
           "aria-label": "GitHub repository",

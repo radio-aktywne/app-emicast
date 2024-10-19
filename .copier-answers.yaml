@@ -4,11 +4,11 @@ _src_path: gh:radio-aktywne/template-service-generic
 accountname: radio-aktywne
 description: Broadcast Icecast transmitting ❄️
 docs: true
-docsurl: https://radio-aktywne.github.io/emicast
-envprefix: EMICAST
-imagename: services/emicast
+docsurl: https://radio-aktywne.github.io/quokka
+envprefix: QUOKKA
+imagename: services/quokka
 registry: true
 releases: true
-reponame: emicast
-repourl: https://github.com/radio-aktywne/emicast
-servicename: emicast
+reponame: quokka
+repourl: https://github.com/radio-aktywne/quokka
+servicename: quokka
