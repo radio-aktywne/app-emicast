@@ -32,22 +32,22 @@ COPY --from=env /env/build/closure/ /nix/store/
 COPY --from=env /env/build/activate /env/activate
 
 # Set working directory to something other than root
-WORKDIR /app/
+WORKDIR /service/
 
-# Create app user
-RUN useradd --create-home app
+# Create service user
+RUN useradd --create-home service
 
 # Setup entrypoint for RUN commands
 COPY scripts/shell.sh scripts/shell.sh
-SHELL ["/app/scripts/shell.sh"]
+SHELL ["/service/scripts/shell.sh"]
 
 # Copy source
 COPY src/ src/
 
 # Setup main entrypoint
 COPY scripts/entrypoint.sh scripts/entrypoint.sh
-ENTRYPOINT ["/app/scripts/entrypoint.sh", "./src/start.sh"]
+ENTRYPOINT ["/service/scripts/entrypoint.sh", "./src/start.sh"]
 CMD []
 
 # Setup ownership
-RUN chown --recursive app: ./
+RUN chown --recursive service: ./

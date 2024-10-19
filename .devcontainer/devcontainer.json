@@ -1,6 +1,6 @@
 {
   // Use latest pre-built image
-  "image": "ghcr.io/radio-aktywne/devcontainers/app-generic:latest",
+  "image": "ghcr.io/radio-aktywne/devcontainers/service-generic:latest",
   // Run arguments
   "runArgs": [
     // Use host UTS namespace
