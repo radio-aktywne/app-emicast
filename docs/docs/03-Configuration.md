@@ -12,7 +12,7 @@ You can configure the service at runtime using various environment variables:
   (default: `0.0.0.0`)
 - `QUOKKA__SERVER__PORT` -
   port to bind to
-  (default: `8000`)
+  (default: `10000`)
 - `QUOKKA__CREDENTIALS__ADMIN__USER` -
   admin username
   (default: `admin`)

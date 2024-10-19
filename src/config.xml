@@ -14,7 +14,7 @@
   <fileserve>0</fileserve>
 
   <listen-socket>
-    <port>${QUOKKA__SERVER__PORT:-8000}</port>
+    <port>${QUOKKA__SERVER__PORT:-10000}</port>
   </listen-socket>
 
   <mount type="default">
