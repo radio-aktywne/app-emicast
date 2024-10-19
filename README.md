@@ -1,13 +1,13 @@
-<h1 align="center">emicast app</h1>
+<h1 align="center">emicast</h1>
 
 <div align="center">
 
-Icecast broadcasting ❄️
+Broadcast Icecast transmitting ❄️
 
-[![Lint](https://github.com/radio-aktywne/app-emicast/actions/workflows/lint.yaml/badge.svg)](https://github.com/radio-aktywne/app-emicast/actions/workflows/lint.yaml)
-[![Image](https://github.com/radio-aktywne/app-emicast/actions/workflows/image.yaml/badge.svg)](https://github.com/radio-aktywne/app-emicast/actions/workflows/image.yaml)
-[![Registry](https://github.com/radio-aktywne/app-emicast/actions/workflows/registry.yaml/badge.svg)](https://github.com/radio-aktywne/app-emicast/actions/workflows/registry.yaml)
-[![Docs](https://github.com/radio-aktywne/app-emicast/actions/workflows/docs.yaml/badge.svg)](https://github.com/radio-aktywne/app-emicast/actions/workflows/docs.yaml)
+[![Lint](https://github.com/radio-aktywne/emicast/actions/workflows/lint.yaml/badge.svg)](https://github.com/radio-aktywne/emicast/actions/workflows/lint.yaml)
+[![Image](https://github.com/radio-aktywne/emicast/actions/workflows/image.yaml/badge.svg)](https://github.com/radio-aktywne/emicast/actions/workflows/image.yaml)
+[![Registry](https://github.com/radio-aktywne/emicast/actions/workflows/registry.yaml/badge.svg)](https://github.com/radio-aktywne/emicast/actions/workflows/registry.yaml)
+[![Docs](https://github.com/radio-aktywne/emicast/actions/workflows/docs.yaml/badge.svg)](https://github.com/radio-aktywne/emicast/actions/workflows/docs.yaml)
 
 </div>
 
@@ -15,15 +15,15 @@ Icecast broadcasting ❄️
 
 ## 💡 About
 
-`emicast` is an [`Icecast`](https://icecast.org) server
-that you can send audio to and have it broadcasted to multiple listeners.
+`emicast` is an [`Icecast`](https://icecast.org) service
+that you can send audio to and have it transmitted to multiple listeners.
 
 ## 📄 Further Reading
 
 More in-depth documentation can be found
-[here](https://radio-aktywne.github.io/app-emicast).
+[here](https://radio-aktywne.github.io/emicast).
 
 ## 💻 Development
 
 Read more about how to develop the project
-[here](https://github.com/radio-aktywne/app-emicast/blob/main/CONTRIBUTING.md).
+[here](https://github.com/radio-aktywne/emicast/blob/main/CONTRIBUTING.md).

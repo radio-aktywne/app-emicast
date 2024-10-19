@@ -1,14 +1,14 @@
 # Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
-_commit: 0.7.1
-_src_path: gh:radio-aktywne/template-app-generic
+_commit: 0.1.0
+_src_path: gh:radio-aktywne/template-service-generic
 accountname: radio-aktywne
-appname: emicast
-description: Icecast broadcasting ❄️
+description: Broadcast Icecast transmitting ❄️
 docs: true
-docsurl: https://radio-aktywne.github.io/app-emicast
+docsurl: https://radio-aktywne.github.io/emicast
 envprefix: EMICAST
-imagename: apps/emicast
+imagename: services/emicast
 registry: true
 releases: true
-reponame: app-emicast
-repourl: https://github.com/radio-aktywne/app-emicast
+reponame: emicast
+repourl: https://github.com/radio-aktywne/emicast
+servicename: emicast

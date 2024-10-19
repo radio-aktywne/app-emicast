@@ -3,11 +3,11 @@ slug: /
 title: Index
 ---
 
-# emicast app
+# emicast
 
-Icecast broadcasting ❄️
+Broadcast Icecast transmitting ❄️
 
 ## 💡 About
 
-`emicast` is an [`Icecast`](https://icecast.org) server
-that you can send audio to and have it broadcasted to multiple listeners.
+`emicast` is an [`Icecast`](https://icecast.org) service
+that you can send audio to and have it transmitted to multiple listeners.
